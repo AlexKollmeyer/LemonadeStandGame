@@ -22,6 +22,11 @@ namespace LemonadeStand
         }
 
         // member methods (CAN DO)
-
+        public void buyLemons(int numOfLemons)
+        {
+            this.wallet.PayMoneyForItems(numOfLemons*.25);
+            this.inventory.AddLemonsToInventory(numOfLemons);
+        }
+        
     }
 }
